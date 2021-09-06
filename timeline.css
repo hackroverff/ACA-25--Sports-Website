@@ -1,0 +1,99 @@
+.header{
+    background: solid transparent;
+    border: 1px solid grey;
+    display:flex;
+    flex-direction: row;
+    height: 60px;
+    width:100%;
+    align-items: center;
+}
+body{
+    margin: 0;
+    background-color: #ebf3f1;
+    overflow-x: hidden;
+    font-family: 'Mate SC', serif;
+}
+#navbar ul{
+    display:flex;
+    list-style:none;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin:10px;
+}
+#navbar ul li{
+    padding:10px ;
+    display:block;
+    height:90%;
+    font-family: 'Mate SC', serif;
+    letter-spacing: 2.5px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li:hover{
+    border-bottom:2px solid white;
+}
+.home{
+    background-image: url("https://i.ytimg.com/vi/pcI1y7YfeG8/maxresdefault.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height : 100vh ;
+}
+.timeline ul{
+    list-style: none;
+    padding : 50px 0;
+}
+.timeline ul li{
+    width : 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: white;
+    position: relative ;
+}
+.timeline ul li div{
+    position : relative ;
+    bottom : 0;
+    width : 400px ;
+    padding : 15px ;
+    background : linear-gradient(#ff512f,#dd2476);
+    font-family: 'Mate SC', serif;
+}
+.timeline ul li:nth-child(odd) div{
+    left : 45px;
+    transform : translate(200px,0);
+}
+.timeline ul li:nth-child(even) div{
+    left : -440px ;
+    transform : translate(-200px,0);
+}
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    border-radius: 50px;
+}
+time{
+    display : block ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Mate SC', serif;
+}
+.timeline ul li.in-view div
+{
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+.timeline{
+    background: linear-gradient(#ffaf7b,#d76d77,#3a1c71);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height : 100% ;
+    font-family: 'Mate SC', serif;
+}
+
+
+
+
