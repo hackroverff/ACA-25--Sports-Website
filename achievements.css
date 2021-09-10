@@ -38,7 +38,7 @@ li:hover{
     background-image: url("https://i.ytimg.com/vi/pcI1y7YfeG8/maxresdefault.jpg"); 
     background-repeat: no-repeat; 
     background-size: cover;
-    height : 100vh ;
+    height : 1000px ;
 }
 #year{
   width: 90px;
@@ -46,7 +46,7 @@ li:hover{
   background-color: #fbb034;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
   margin-left: 585px;
-  margin-top: 140px;
+  margin-top: 5px;
   border-radius: 2em;
 }
 #submit{
@@ -56,4 +56,26 @@ li:hover{
   border-radius: 2em;
   height: 24px;
 
+}
+#achieve h3{
+  padding-left: 30px;
+  margin-bottom: auto;
+  padding-bottom: 1em;
+  color: black;
+  font-weight: bolder;
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  border-radius: 50px;
+}
+#achieve{
+  width: 530px;
+  height: 1px;
+  margin-left: 430px;
+  margin-top: 50px;
+}
+h1{
+  font-family: 'Encode Sans SC', sans-serif;
+  letter-spacing: 2.5px;
+  /* margin-left: 200px; */
+  color: #ffdd00;
 }
