@@ -58,6 +58,7 @@ li:hover{
 
 }
 #achieve h3{
+  visibility: hidden;
   padding-left: 30px;
   margin-bottom: auto;
   padding-bottom: 1em;
@@ -66,6 +67,9 @@ li:hover{
   background-color: #fbb034;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
   border-radius: 50px;
+}
+#achieve h3.in-view{
+  visibility: visible;
 }
 #achieve{
   width: 530px;

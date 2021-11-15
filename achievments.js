@@ -10,11 +10,13 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+  var items = document.querySelectorAll("#achieve h3");
 
   document.getElementById('datavalue').addEventListener('submit',submitForm);
   function submitForm(e){
     e.preventDefault();
     var year=document.getElementById('year').value;
+    console.log(year);
     readResults(year);
   }
 
@@ -24,11 +26,13 @@ function readResults(year){
         var ranks = data.val();
         var finalranks=ranks.toString().split(',');
         var text='';
-        for(var i=1; i<ranks.length; i++){
+        for(var i=0; i<ranks.length; i++){
           // text=text+i+". "+ranks[i]+"<br>"
-          document.getElementById('result'+i).innerHTML = i+". "+finalranks[i]+"<br>";
-          console.log(i)
-          console.log(year)
+          // items[i].classList.add("in-view");
+          document.getElementById('result'+i).innerHTML = "hi"
+          // i+". "+finalranks[i]+"<br>";
+          console.log(year);
+          console.log(ranks);
           console.log(finalranks[i])
         }
         // document.getElementById('result1').innerHTML = text;
